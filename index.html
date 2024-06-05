@@ -17,7 +17,7 @@
 			min-height:100%; /* keeps from getting too large on wide screen */
 			}
 		img.flexible {
-			float:right;
+			float: right;
 			display:inline-block;
 			padding:20px;
 			max-width:300px; /* actual size of image */
@@ -33,6 +33,11 @@
 			text-align:center;
 			clear:both; /* ride below all items */
 		}
+
+		#my-pic {
+			height: 400px;
+			width: 300px;
+		}
     </style>
 </head>
 <body>
@@ -40,20 +45,22 @@
 		<h1 class="masthead">Time of Day</h1>
 	</header>
     <main>
-	 <header><h3>A JavaScript Project by YOUR NAME HERE</h3></header>
-	    <p>Explain what your page does and how it works here!</p>
-	  <img src="http://dummyimage.com/300x400" alt="Time of Day Image" class="flexible">
-     <footer>
+	 <header><h3>A JavaScript Project by Andrew Lee</h3></header>
+	 	<h3 id="my-greeting">Test</h3>
+	    <p>The page will update based on what time of the day it is. The image, background, and colors will change!</p>
+		<img id="my-pic" alt="Time of Day Image" class="flexible">
+    <footer>
       <p><small>&copy; 2022 by 
-          YOUR NAME HERE, All Rights Reserved ~ 
+          Andrew Lee, All Rights Reserved ~ 
           <a id="html-checker" href="#" target="_blank">Check HTML</a> ~ 
           <a id="css-checker" href="#" target="_blank">Check CSS</a></small>
      </p>
     </footer>
   </main>
- <script>
-    document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+  <script>
+ 	document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
     document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);  
  </script>
+ <script src="script.js"></script>
 </body>
 </html>
